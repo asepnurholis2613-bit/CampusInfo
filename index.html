@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusInfo | Informasi Kampus</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #1f2937;
+            background: #f8fafc;
+        }
+        header {
+            background: #1d4ed8;
+            color: white;
+            padding: 22px 8%;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+        .hero {
+            padding: 75px 8%;
+            background: #dbeafe;
+        }
+        .hero h1 { font-size: 42px; margin-bottom: 12px; }
+        .hero p { max-width: 600px; line-height: 1.7; }
+        .content { padding: 35px 8%; }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #0000000d;
+        }
+        .card h3 { color: #1d4ed8; }
+        footer {
+            padding: 24px;
+            text-align: center;
+            background: #1e293b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <strong>CampusInfo</strong>
+            <div>
+                <a href="#beranda">Beranda</a>
+                <a href="#program-studi">Program Studi</a>
+                <a href="#kontak">Kontak</a>
+                <a href="#arsitektur">Arsitektur</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="beranda">
+        <h1>Selamat Datang di CampusInfo</h1>
+        <p>
+            Portal informasi kampus untuk mengenal program studi,
+            mendapatkan informasi akademik, dan memahami arsitektur
+            aplikasi berbasis Laravel.
+        </p>
+    </section>
+
+    <section class="content" id="program-studi">
+        <h2>Program Studi</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Informatika</h3>
+                <p>Mempelajari pemrograman, perangkat lunak, dan teknologi informasi.</p>
+            </article>
+            <article class="card">
+                <h3>Sistem Informasi</h3>
+                <p>Mempelajari pengelolaan data dan sistem informasi organisasi.</p>
+            </article>
+            <article class="card">
+                <h3>Manajemen</h3>
+                <p>Mempelajari pengelolaan organisasi dan strategi bisnis.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="content" id="kontak">
+        <h2>Kontak</h2>
+        <div class="card">
+            <p>Untuk informasi akademik, silakan hubungi bagian administrasi kampus.</p>
+        </div>
+    </section>
+
+    <section class="content" id="arsitektur">
+        <h2>Laravel Architecture Explorer</h2>
+        <div class="card">
+            <p><strong>Request:</strong> Browser mengakses URL aplikasi.</p>
+            <p><strong>Route:</strong> Laravel mencocokkan URL melalui routes/web.php.</p>
+            <p><strong>Controller:</strong> Memproses permintaan melalui HomeController atau ArchitectureController.</p>
+            <p><strong>View:</strong> Blade menghasilkan HTML yang dikirim ke browser.</p>
+            <p><em>Catatan: penjelasan ini merupakan demo statis, bukan proses Laravel yang berjalan langsung di GitHub Pages.</em></p>
+        </div>
+    </section>
+
+    <footer>
+        CampusInfo — Proyek Pembelajaran Arsitektur Laravel 12
+    </footer>
+</body>
+</html>
